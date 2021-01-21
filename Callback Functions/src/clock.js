@@ -18,8 +18,8 @@ function getTime() {
     return `${hh}:${mm}:${ss}`;
 }
 
-// function tickClock() {
-//     () =>clockSection.textContent = getTime();
-// }
+function tickClock() {
+    () => clockSection.textContent = getTime();
+}
 
-setInterval(() => clockSection.textContent = getTime(), 1000);
+setInterval(tickClock, 1000);
